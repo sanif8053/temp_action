@@ -8,5 +8,5 @@ jobs:
       - id: foo
         uses: sanif8053/temp_action@master
         with:
-          build_path: 'C:\Users\SanifPC\Desktop\fb.apk'
+          build_path: 'C:/Users/SanifPC/Desktop/fb.apk'
           subscription_key: e570e948-0661-4481-8728-3b82ea0399a2
