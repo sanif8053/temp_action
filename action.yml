@@ -12,5 +12,5 @@ runs:
   steps:
     - run: echo  ${{ inputs.build_path }}.
       shell: bash
-    - run: ${{ github.action_path }}/index.sh
+    - run: chmod +x ${{ github.action_path }}/index.sh
       shell: bash
