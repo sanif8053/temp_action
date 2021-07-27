@@ -1,0 +1,16 @@
+name: 'sofy upload'
+description: 'upload build to sofy'
+inputs:
+  build_path:  # id of input
+    description: 'Build Path'
+    required: true
+  subscription_key:
+    description: 'Upload key'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: echo  ${{ inputs.build_path }}.
+      shell: bash
+    - run: ${{ github.action_path }}/index.sh
+      shell: bash
