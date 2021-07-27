@@ -4,7 +4,7 @@ echo "hello"
 echo "build path "${build_path}""
 echo "token ${subscription_key}"
 
-# response = curl --location --request POST 'https://api-sofy-test.azurewebsites.net/api/AppTests/buildUpload' \
-# --header "SubscriptionKey: ${subscription_key}" \
-# --form "applicationFile=@"${build_path}""
-# echo ${response}
+response = curl --location --request POST 'https://api-sofy-test.azurewebsites.net/api/AppTests/buildUpload' \
+--header "SubscriptionKey: ${subscription_key}" \
+--form "applicationFile=@"${build_path}""
+echo ${response}
