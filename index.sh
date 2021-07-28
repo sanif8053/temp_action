@@ -3,6 +3,7 @@ echo "hello"
 # echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
 echo "build path "${build_path}""
 echo "token ${subscription_key}"
+echo "${{ github.action_path }}/index.sh"
 echo "${github.action_path}"
 echo " ${GITHUB_WORKSPACE}" 
 
