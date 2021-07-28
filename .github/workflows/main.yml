@@ -9,6 +9,9 @@ jobs:
       subscription_key: e570e948-0661-4481-8728-3b82ea0399a2
 
     steps:
-      - id: foo
-        uses: sanif8053/temp_action@master
+#       - id: foo
+#         uses: sanif8053/temp_action@master
+        - name: Trigger GitHub pages rebuild
+          run: |
+           curl --location --request POST 'https://api-sofy-test.azurewebsites.net/api/AppTests/buildUpload'  --header "SubscriptionKey: e570e948-0661-4481-8728-3b82ea0399a2"  --form "applicationFile=@"C:/Users/SanifPC/Desktop/fb.apk""
         
