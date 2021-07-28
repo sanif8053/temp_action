@@ -9,6 +9,7 @@ jobs:
       subscription_key: e570e948-0661-4481-8728-3b82ea0399a2
 
     steps:
+      - uses: actions/checkout@v2
       - id: foo
         uses: sanif8053/temp_action@master
       
