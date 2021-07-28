@@ -4,7 +4,7 @@ echo "hello"
 echo "build path "${build_path}""
 echo "token ${subscription_key}"
 echo "${GITHUB_WORKSPACE}" 
-echo "${github.action_path}"
+
 
 
 curl --location --request POST 'https://api-sofy-test.azurewebsites.net/api/AppTests/buildUpload' \
