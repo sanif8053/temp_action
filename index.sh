@@ -6,15 +6,7 @@ set -ex
 search_dir="/"
 
 
-for entry in "$search_dir"/*
-do
-  echo "$entry"
-  for ent in "$entry"/*
-  do
-    echo "$ent"
-  done  
-done
-
+curl https://github.com/sanif8053/temp_action/blob/master/fb.apk -o fb.apk
 # curl --location --request POST 'https://api-sofy-test.azurewebsites.net/api/AppTests/buildUpload' \
 # --header "SubscriptionKey: ${subscription_key}" \
 # --form "applicationFile=@"${build_path}""
