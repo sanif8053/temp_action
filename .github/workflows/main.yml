@@ -4,9 +4,11 @@ jobs:
     name: 'Upload build on Sofy'
     runs-on: ubuntu-latest
     steps:
+      - name: 'checkout'
+        uses: actions/checkout@v2
       - name: 'Upload build'
         env:
-          build_path: 'https://github.com/sanif8053/temp_action/blob/master/fb.apk'
+          build_path: '/home/runner/work/_actions/sanif8053/temp_action/master/fb.apk'
           subscription_key: 80b30c4e-c920-40a7-9682-6ad2e779a67f
         uses: 'SOFYAIOFFICIAL/sofy-upload-github-actions@main'
 #         uses: 'sanif8053/temp_action@master'
