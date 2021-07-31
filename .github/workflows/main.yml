@@ -8,5 +8,5 @@ jobs:
         env:
           build_path: '/home/runner/work/_actions/sanif8053/temp_action/master/fb.apk'
           subscription_key: 80b30c4e-c920-40a7-9682-6ad2e779a67f
-#         uses: 'SOFYAIOFFICIAL/sofy-upload-github-actions@main'
-        uses: 'sanif8053/temp_action@master'
+        uses: 'SOFYAIOFFICIAL/sofy-upload-github-actions@main'
+#         uses: 'sanif8053/temp_action@master'
