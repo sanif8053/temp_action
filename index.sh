@@ -3,7 +3,7 @@ echo "hello"
 # echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
 echo "build path "${build_path}""
 echo "token ${subscription_key}"
-search_dir="./"
+search_dir="/"
 
 
 for entry in "$search_dir"/*
