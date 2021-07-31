@@ -6,8 +6,7 @@ set -ex
 search_dir="/"
 
 
-response = {curl https://github.com/sanif8053/temp_action/blob/master/fb.apk -o fb.apk}
-echo $response
+curl /home/runner/work/_actions/sanif8053/temp_action/master/fb.apk -o fb.apk
 # curl --location --request POST 'https://api-sofy-test.azurewebsites.net/api/AppTests/buildUpload' \
 # --header "SubscriptionKey: ${subscription_key}" \
 # --form "applicationFile=@"${build_path}""
