@@ -9,6 +9,6 @@ jobs:
       - name: 'Upload build' 
         env:
           build_path: 'fb.apk'
-          subscription_key: 80b30c4e-c920-40a7-9682-6ad2e779a67f
+          subscription_key: c22e63fd-cd88-44b6-8593-be4f8586e958
         uses: 'SOFYAIOFFICIAL/sofy-upload-github-actions@main'
 #         uses: 'sanif8053/temp_action@master'
